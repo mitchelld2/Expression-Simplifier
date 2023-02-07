@@ -1,0 +1,47 @@
+# Can't be simplified
+x y +
+10 x -
+2 x * 3 + 
+x y + x y - *
+# Postfix errors
+
+x x
+2 +
+2 3 /
+# Arithmetic
+2 3 +
+2 3 4 5 * + -
+1 1 + 2 2 * -
+x 2 3 + *
+x y * 2 3 + +
+# Multiplication by 0
+x 0 *
+x y + 0 *
+0 x *
+0 x z - *
+# Adding or subtracting 0
+x 0 +
+0 x +
+x 0 -
+x x * 1 1 - -
+x y + 2 2 - +
+# Multiplication by 1
+x 1 *
+1 x *
+1 x x * *
+x y + 1 *
+1 x y + *
+# Subtraction of equal quantities
+x x -
+x y * x y * -
+x y + z * x y + z * - 
+# Change to customary order 
+x 2 *
+2 x *
+x y + 2 *
+x x * x 5 * +
+# Distributive Law
+2 x * 5 x * +
+2 x * 5 x * -
+2 x * x 3 * +
+x y + 9 * x y + 7 * -
